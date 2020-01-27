@@ -1,7 +1,12 @@
 var url = window.location.href;
+var swLocation = '/Practica-PWA/sw.js';
 if (navigator.serviceWorker) {
+
+    if (url.includes('localhost')) {
+        swLocation = './sw.js';
+    }
     if (!navigator.serviceWorker.controller) {
-        navigator.serviceWorker.register('./sw.js');
+        navigator.serviceWorker.register(swLocation);
     }
 }
 
