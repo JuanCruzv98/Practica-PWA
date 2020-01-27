@@ -6,7 +6,7 @@ const INMUTABLE_CACHE = 'inmutable_v1';
 const DYNAMIC_CACHE_LIMIT = 50;
 
 const APPSHELL = [
-    '/',
+    //'/',
     'index.html',
     'css/style.css',
     'img/favicon.ico',
